@@ -1,0 +1,199 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background-image: url("/new.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: black;
+    margin-top: 0px;
+    background-color: white;
+
+    
+    
+    position: relative;
+    top: 5px;
+    box-shadow: rgba(182, 176, 176, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+h1{
+    margin-top: 20px;
+}
+ .nav-links{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    column-gap: 20px;
+    
+}
+.nav-links a{
+    text-decoration: none;
+    margin-left: 10px;
+    display: block;
+}
+.nav-links i{
+    margin-right: 5px;
+}
+a:hover{
+    text-decoration: underline;
+    color: red;
+
+}
+.toggle{
+    margin-top: 20px;
+    display: none;
+
+}
+.link{
+    display: block;
+}
+.sidenav{
+    background-color: brown;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    transition: 0.5s;
+    left: -60%;
+    padding: 20px;
+    color: white;
+    z-index: 2;
+    
+    
+
+   
+    
+
+    
+}
+.nav {
+    color: white;
+    padding: 20px;
+
+}
+.nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    color: black;
+}
+.nav i{
+    margin-right: 5px;
+    color: black;
+}
+
+
+.foot{
+    background-color: rgb(59, 48, 70);
+    margin-top: 30px;
+    padding: 30px;
+    color: white;
+    
+}
+.foot h3 p{
+    padding-bottom: 20px;
+}
+.icons{
+    color: black;
+}
+
+
+/*media qury*/
+@media (max-width:700px){
+    .link {
+        display: none;
+    }
+    .toggle{
+        display: block;
+    }
+    
+    
+    .i{
+        display: none;
+    }
+    .new{
+        display: none;
+    }
+    body{
+
+        background-image: url("/mobile.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+    .input-box input{
+    
+    
+        box-shadow: inset #abacaf 0 0 0 2px;
+        border: 0;
+        background: rgba(0, 0, 0, 0);
+        appearance: none;
+        width: 100%;
+        position: relative;
+        border-radius: 3px;
+        padding: 5px;
+        
+        line-height: 1.4;
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        font-weight: 400;
+        height: 40px;
+        transition: all .2s ease;
+        border-radius: 20px;
+        margin: 5px 0px 15px;
+        :hover{
+            box-shadow: 0 0 0 0 #fff inset, #1de9b6 0 0 0 2px;
+            background-color: white;
+        }
+        :focus{
+            background: #962c2c;
+            outline: 0;
+            box-shadow: 0 0 0 0 #fff inset, #1de9b6 0 0 0 3px;
+        }
+    
+    }
+    .regform{
+        width: 300px;
+        background-color: rgba(224, 204, 204, 0.2);
+        margin: 150px auto;
+        font-size: 20px;
+        padding: 20px;
+        color: rgb(39, 4, 4);
+    }
+    .btn button{
+    
+        display: inline-block;
+        outline: 0;
+        border: 0;
+        cursor: pointer;
+        will-change: box-shadow,transform;
+        background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100% );
+        box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(58 65 111 / 50%);
+        padding: 0 32px;
+        border-radius: 6px;
+        color: #fff;
+        height: 48px;
+        font-size: 18px;
+        text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+        transition: box-shadow 0.15s ease,transform 0.15s ease;
+        :hover {
+            box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #3c4fe0;
+            transform: translateY(-2px);
+        }
+        :active{
+            box-shadow: inset 0px 3px 7px #3c4fe0;
+            transform: translateY(2px);
+        }
+        
+        position: relative;
+        left: 90px;
+    }
+}
